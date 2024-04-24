@@ -6,6 +6,8 @@ import * as ui from "./ui.js";
 import * as recordingUtils from "./recordingUtils.js";
 import * as strangerUtils from "./strangerUtils.js";
 
+//This calls the io function provided by the Socket.IO library. The argument "/" specifies the path to which the client wants to connect.
+// In this case, it's the root path / of the server.
 //initialization of socketIO connection
 const socket = io("/"); // Connect to the server
 wss.registerSocketEvents(socket);
